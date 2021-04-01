@@ -1,0 +1,19 @@
+.home {
+  padding-top: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.home-header-logo {
+  padding-bottom: 5vw;
+}
+
+div .home-content {
+  justify-content: space-between;
+  background-color: red;
+}
+
+.home-screens-web {
+  position: fixed;
+  bottom: 0;
+}
