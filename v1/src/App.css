@@ -1,6 +1,8 @@
 div .app {
-  height: 100vh;
   width: 100vw;
+  height: 210vh;
   overflow: hidden;
-  background-image: url("/Users/Goon/Desktop/landing pages/v1/src/resources/images/v1-background.svg");
+  background-image: linear-gradient(#cc00ff, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,13 +1,16 @@
 import "./App.css";
 import { Box, ThemeProvider } from "@material-ui/core";
-import Home from "./pages/Home";
-import { v1Theme } from "./constants/styles";
+import LotteryHome from "./pages/lotteryhome/LotteryHome";
+import PaymentHome from "./pages/paymenthome/PaymentHome";
+import WalletHome from "./pages/wallethome/WalletHome";
+
+import { v1Theme } from "./utils/styles";
 
 function App() {
   return (
     <ThemeProvider theme={v1Theme}>
-      <Box bgcolor="primary.light" className="app">
-        <Home></Home>
+      <Box className="app">
+        <LotteryHome></LotteryHome>
       </Box>
     </ThemeProvider>
   );
