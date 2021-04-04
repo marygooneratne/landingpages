@@ -10,7 +10,7 @@ function App() {
   return (
     <ThemeProvider theme={v1Theme}>
       <Box className="app">
-        <PaymentHome />
+        <LotteryHome />
       </Box>
     </ThemeProvider>
   );
