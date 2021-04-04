@@ -1,3 +1,7 @@
+div .app {
+  background-image: linear-gradient(#cc00ff, #000000);
+}
+
 .lottery-home {
   padding-top: 2vw;
 }

@@ -40,6 +40,9 @@
   width: 100vw;
   height: 90vh;
 }
+div .app {
+  background-image: linear-gradient(#6600e8, #000000);
+}
 .explainer-container-content {
   justify-content: space-between;
   width: 80vw;

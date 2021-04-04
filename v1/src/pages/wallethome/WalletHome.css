@@ -17,6 +17,9 @@
   padding-left: 5vw;
   /* background-color: yellow; */
 }
+div .app {
+  background-image: linear-gradient(#6600e8, #000000);
+}
 
 .wallet-home-text {
   align-self: flex-start;
