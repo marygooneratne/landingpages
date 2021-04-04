@@ -1,7 +1,7 @@
 import "../../global.css";
 import "./PaymentHome.css";
 import { Box, Typography, TextField, Button } from "@material-ui/core";
-import mockup from "../../resources/images/mockup-lottery.png";
+import mockup from "../../resources/videos/mockup-payment.mp4";
 import headerLogo from "../../resources/images/logo-light.svg";
 import EmailInput from "../../components/EmailInput";
 import GradientTextBox from "../../components/GradientTextBox";
@@ -53,9 +53,7 @@ function PaymentHome() {
             Store crypto and earn interest. No fees.
           </Typography>
         </Box>{" "}
-        <Fade top>
-          <img src={mockup} className="payment-home-mockup" />{" "}
-        </Fade>
+        <video controls autostart autoPlay src={mockup} type="video/mp4" />
       </Box>
       <Box className="explainer-container">
         <Box className="explainer-container-content rows">

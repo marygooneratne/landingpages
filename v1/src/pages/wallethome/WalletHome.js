@@ -1,7 +1,7 @@
 import "../../global.css";
 import "./WalletHome.css";
 import { Box, Typography, TextField, Button } from "@material-ui/core";
-import mockup from "../../resources/images/mockup-lottery.png";
+import mockup from "../../resources/images/mockup-wallet.png";
 import headerLogo from "../../resources/images/logo-light.svg";
 import EmailInput from "../../components/EmailInput";
 import GradientTextBox from "../../components/GradientTextBox";

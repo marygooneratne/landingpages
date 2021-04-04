@@ -54,7 +54,7 @@ function LotteryHome() {
           </Typography>
         </Box>{" "}
         <Fade top>
-          <img src={mockup} className="lottery-home-mockup" />{" "}
+          <img src={mockup} className="lottery-home-mockup" />
         </Fade>
       </Box>
       <Box className="explainer-container">
