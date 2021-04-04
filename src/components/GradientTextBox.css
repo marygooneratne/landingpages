@@ -35,3 +35,22 @@
 .gradient-text-box-title {
   padding-bottom: 0.5rem;
 }
+
+h6.gradient-text-box-title {
+  font-size: 1rem;
+}
+.gradient-text-box-body {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .gradient-text-box {
+    width: 80vw !important;
+    height: 40vw !important;
+    margin-bottom: 10vw !important;
+    margin: auto;
+  }
+  .gradient-text-box-content {
+    width: 90% !important;
+  }
+}

@@ -38,6 +38,11 @@ function WalletHome() {
       />
     </Fade>
   ));
+  const buttonLabel = (
+    <span className="waitlist-button-text">
+      Join<span className="waitlist-button-web-text"> Waitlist</span>
+    </span>
+  );
   return (
     <Box className="wallet-home rows">
       <Box className="wallet-home-header">
@@ -45,10 +50,14 @@ function WalletHome() {
       </Box>
       <Box className="wallet-home-landing-container columns">
         <Box className="wallet-home-text rows">
-          <Typography variant="h2" color="primary">
+          <Typography
+            variant="h2"
+            color="primary"
+            className="lottery-home-text-title"
+          >
             The simplest intro to crypto
           </Typography>
-          <EmailInput buttonLabel="Join Waitlist" />
+          <EmailInput buttonLabel={buttonLabel} />
           <Typography variant="h5" color="primary">
             Store crypto and earn interest. No fees.
           </Typography>
@@ -74,7 +83,7 @@ function WalletHome() {
         </Box>
       </Box>
       <Box className="wallet-home-footer">
-        <EmailInput buttonLabel="Join Waitlist" />
+        <EmailInput buttonLabel={buttonLabel} />
       </Box>
     </Box>
   );

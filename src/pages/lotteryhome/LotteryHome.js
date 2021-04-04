@@ -38,6 +38,11 @@ function LotteryHome() {
       />
     </Fade>
   ));
+  const buttonLabel = (
+    <span className="waitlist-button-text">
+      Join<span className="waitlist-button-web-text"> Waitlist</span>
+    </span>
+  );
   return (
     <Box className="lottery-home rows">
       <Box className="lottery-home-header">
@@ -45,10 +50,14 @@ function LotteryHome() {
       </Box>
       <Box className="lottery-home-landing-container columns">
         <Box className="lottery-home-text rows">
-          <Typography variant="h2" color="primary">
+          <Typography
+            variant="h2"
+            className="lottery-home-text-title"
+            color="primary"
+          >
             The simplest intro to crypto
           </Typography>
-          <EmailInput buttonLabel="Join Waitlist" />
+          <EmailInput buttonLabel={buttonLabel} />
           <Typography variant="h5" color="primary">
             Store crypto and earn interest. No fees.
           </Typography>
@@ -74,7 +83,7 @@ function LotteryHome() {
         </Box>
       </Box>
       <Box className="lottery-home-footer">
-        <EmailInput buttonLabel="Join Waitlist" />
+        <EmailInput buttonLabel={buttonLabel} />
       </Box>
     </Box>
   );

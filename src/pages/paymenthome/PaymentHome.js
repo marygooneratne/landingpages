@@ -38,6 +38,11 @@ function PaymentHome() {
       />
     </Fade>
   ));
+  const buttonLabel = (
+    <span className="waitlist-button-text">
+      Join<span className="waitlist-button-web-text"> Waitlist</span>
+    </span>
+  );
   return (
     <Box className="payment-home rows">
       <Box className="payment-home-header">
@@ -45,16 +50,20 @@ function PaymentHome() {
       </Box>
       <Box className="payment-home-landing-container columns">
         <Box className="payment-home-text rows">
-          <Typography variant="h2" color="primary">
+          <Typography
+            variant="h2"
+            color="primary"
+            className="lottery-home-text-title"
+          >
             The simplest intro to crypto
           </Typography>
-          <EmailInput buttonLabel="Join Waitlist" />
+          <EmailInput buttonLabel={buttonLabel} />
           <Typography variant="h5" color="primary">
             Store crypto and earn interest. No fees.
           </Typography>
         </Box>{" "}
         <Fade top>
-          <img src={mockup} className="lottery-home-mockup" />
+          <img src={mockup} className="payment-home-mockup" />
         </Fade>{" "}
       </Box>
       <Box className="explainer-container">
@@ -74,7 +83,7 @@ function PaymentHome() {
         </Box>
       </Box>
       <Box className="payment-home-footer">
-        <EmailInput buttonLabel="Join Waitlist" />
+        <EmailInput buttonLabel={buttonLabel} />
       </Box>
     </Box>
   );
